@@ -3,83 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sage Researcher: Advanced penetration testing, network forensics, and infrastructure hardening services.">
-    <meta name="keywords" content="Cybersecurity, Penetration Testing, Network Forensics, Hardening, Ethical Hacking">
-    <meta name="author" content="Sage Researcher">
-    <title>SAGE RESEARCHER | INFRASTRUCTURE HARDENING</title>
+    <title>SAGE // MAIN TERMINAL</title>
     <style>
         body { 
-            background-color: #050505; 
+            background-color: #000; 
             color: #00ff41; 
-            font-family: 'Courier New', monospace; 
-            padding: 50px; 
-            line-height: 1.6;
+            font-family: 'Courier New', Courier, monospace; 
+            padding: 40px; 
+            margin: 0;
+            background-image: linear-gradient(rgba(0, 20, 0, 0.2) 1px, transparent 1px);
+            background-size: 100% 4px;
         }
-        h1 { 
-            color: #fff; 
-            text-transform: uppercase; 
-            letter-spacing: 3px; 
-            border-bottom: 2px solid #00ff41; 
-            display: inline-block; 
-            padding-bottom: 10px;
-        }
-        .status { 
-            color: #ffcc00; 
-            font-weight: bold; 
-            margin-bottom: 30px; 
-        }
-        .log-entry { 
-            border-left: 3px solid #00ff41; 
-            padding: 20px; 
-            margin: 20px 0; 
-            background: #0a0a0a; 
-        }
-        h3 { color: #00ff41; margin-top: 0; }
-        ul { padding-left: 20px; }
-        a { 
-            color: #00ff41; 
-            border: 1px solid #00ff41; 
-            padding: 10px 20px; 
-            text-decoration: none; 
-            display: inline-block; 
-            margin-top: 20px; 
-        }
-        a:hover { 
-            background: #00ff41; 
-            color: #050505; 
-        }
+        h1 { color: #fff; font-size: 1.5rem; text-shadow: 0 0 5px #00ff41; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .panel { border: 1px solid #00ff41; padding: 20px; background: #050505; }
+        h3 { color: #fff; border-bottom: 1px solid #00ff41; padding-bottom: 5px; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 10px; }
+        li::before { content: "> "; color: #ffcc00; }
+        .status { color: #ffcc00; font-weight: bold; margin-bottom: 20px; animation: blink 1s infinite; }
+        a { color: #000; background: #00ff41; padding: 10px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px; }
+        @keyframes blink { 50% { opacity: 0; } }
     </style>
 </head>
 <body>
-    <h1>SAGE RESEARCHER // MAIN TERMINAL</h1>
-    <p class="status">> Status: Accepting Limited Security Audits</p>
+    <h1>[ROOT@SAGE_RESEACHER]:~# SYSTEM_INIT</h1>
+    <p class="status">STATUS: ONLINE / ACCEPTING AUDITS</p>
 
-    <div class="log-entry">
-        <h3>// SERVICE CATALOG</h3>
-        <ul>
-            <li><strong>Network Recon:</strong> Auditing for SMB/FTP/Redis misconfigurations.</li>
-            <li><strong>Infrastructure Hardening:</strong> Implementing defense-in-depth protocols.</li>
-            <li><strong>Vulnerability Assessment:</strong> Identifying potential attack vectors.</li>
-            <li><strong>Digital Secrecy:</strong> Hardening your digital footprint.</li>
-        </ul>
+    <div class="grid">
+        <div class="panel">
+            <h3>// CORE CAPABILITIES</h3>
+            <ul>
+                <li>Network Recon & Enumeration</li>
+                <li>Infrastructure Hardening</li>
+                <li>Vulnerability Assessment</li>
+                <li>Digital Secrecy Protocols</li>
+                <li>Incident Forensic Analysis</li>
+            </ul>
+        </div>
+        <div class="panel">
+            <h3>// ACTIVE LOGS</h3>
+            <p><strong>LOG #005:</strong> SSH Hardening [SECURED]</p>
+            <p><strong>LOG #004:</strong> Service Enumeration [HARDENED]</p>
+        </div>
     </div>
 
-    <div class="log-entry">
-        <h3>LOG #005: SSH HARDENING</h3>
-        <p>Finding: Insecure SSH configurations detected in lab environment.</p>
-        <p>Action: Implemented key-based authentication for root isolation and disabled password entry.</p>
-        <p>Status: <b>SECURED.</b></p>
-    </div>
-
-    <div class="log-entry">
-        <h3>LOG #004: SERVICE ENUMERATION</h3>
-        <p>Target: Redis, SMB, FTP protocols.</p>
-        <p>Result: Enumeration completed. Baseline security protocols applied.</p>
-        <p>Status: <b>HARDENED.</b></p>
-    </div>
-
-    <a href="mailto:enok.research.254@gmail.com">[INQUIRE_SERVICES]</a>
-
-    <p style="margin-top: 40px; color: #555;">> System ready. Awaiting input...</p>
+    <a href="mailto:enok.research.254@gmail.com">[INITIATE_CONTACT]</a>
 </body>
 </html>
