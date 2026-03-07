@@ -3,103 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sage Researcher | Infrastructure Security</title>
+    <title>Sage Researcher | Enterprise Security & Breach Prevention</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap');
         
         body { 
             background-color: #0f172a; 
             color: #e2e8f0; 
             font-family: 'Inter', sans-serif; 
             line-height: 1.6; 
-            padding: 60px 10%; 
-            margin: 0;
+            padding: 40px 10%; 
+            margin: 0; 
         }
         
-        .container { max-width: 800px; margin: auto; }
+        .container { max-width: 900px; margin: auto; }
         
-        h1 { 
-            color: #f8fafc; 
-            font-size: 2.5rem; 
-            margin-bottom: 0.5rem; 
-        }
+        h1 { font-family: 'Playfair Display', serif; color: #f8fafc; font-size: 3rem; margin-bottom: 0.5rem; }
         
-        .hero-sub { 
-            font-size: 1.2rem; 
-            color: #94a3b8; 
-            margin-bottom: 40px; 
-        }
+        .hero-sub { font-size: 1.3rem; color: #94a3b8; margin-bottom: 40px; }
         
         .panel { 
             background: #1e293b; 
-            padding: 30px; 
-            border-radius: 8px; 
-            margin-bottom: 20px; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            padding: 40px; 
+            border-radius: 12px; 
+            margin-bottom: 30px; 
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); 
         }
         
-        h3 { 
-            color: #f8fafc; 
-            margin-top: 0; 
-            border-bottom: 1px solid #334155; 
-            padding-bottom: 10px; 
-        }
+        h3 { font-family: 'Playfair Display', serif; color: #f8fafc; margin-top: 0; font-size: 1.8rem; border-bottom: 1px solid #334155; padding-bottom: 10px; }
         
-        ul { 
-            padding-left: 20px; 
-            color: #cbd5e1; 
-        }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
         
-        li { margin-bottom: 10px; }
+        .service-item { margin-bottom: 20px; }
         
         .cta-btn { 
             background: #007bff; 
             color: white; 
-            padding: 12px 24px; 
+            padding: 15px 30px; 
             text-decoration: none; 
-            border-radius: 5px; 
+            border-radius: 8px; 
             display: inline-block; 
-            font-weight: 700;
-            margin-top: 10px;
-            transition: background 0.3s ease;
+            font-weight: 700; 
+            transition: 0.3s; 
         }
         
-        .cta-btn:hover { 
-            background: #0056b3; 
-        }
+        .cta-btn:hover { background: #0056b3; transform: translateY(-2px); }
         
-        footer { 
-            margin-top: 40px; 
-            color: #64748b; 
-            font-size: 0.9rem; 
-        }
+        .methodology { display: flex; justify-content: space-between; margin-top: 20px; text-align: center; }
+        
+        .step { flex: 1; padding: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Sage Researcher</h1>
-        <p class="hero-sub">Securing digital infrastructure against emerging threats.</p>
+        <h1>Enterprise Security & Breach Prevention</h1>
+        <p class="hero-sub">Sage Researcher secures your infrastructure by neutralizing attack vectors before they are exploited.</p>
 
         <div class="panel">
-            <h3>Consulting Services</h3>
-            <ul>
-                <li><strong>Security Audit & Risk Assessment:</strong> Identifying vulnerabilities in SMB, FTP, and Redis configurations to prevent unauthorized access.</li>
-                <li><strong>Infrastructure Hardening:</strong> Implementing defense-in-depth protocols to secure your data assets.</li>
-                <li><strong>Vulnerability Management:</strong> Automated scanning and manual penetration testing for critical vectors.</li>
-                <li><strong>Incident Response:</strong> Forensic analysis and strategic remediation following security breaches.</li>
-            </ul>
+            <h3>Our Methodology</h3>
+            <div class="methodology">
+                <div class="step">🔍<br><strong>Audit</strong></div>
+                <div class="step">🛠️<br><strong>Remediate</strong></div>
+                <div class="step">🛡️<br><strong>Harden</strong></div>
+                <div class="step">📈<br><strong>Monitor</strong></div>
+            </div>
         </div>
 
         <div class="panel">
-            <h3>Why Trust Sage?</h3>
-            <p>I focus on measurable security outcomes. By analyzing your infrastructure for common attack vectors, I provide the hardening necessary to protect your business continuity and data integrity.</p>
+            <h3>Client-Focused Outcomes</h3>
+            <div class="grid">
+                <div class="service-item"><strong>Risk Reduction:</strong> We find the leaks in your network before malicious actors do.</div>
+                <div class="service-item"><strong>Data Integrity:</strong> Hardening your systems to prevent unauthorized access.</div>
+                <div class="service-item"><strong>Business Continuity:</strong> Ensuring your infrastructure remains operational during security events.</div>
+                <div class="service-item"><strong>Compliance Readiness:</strong> Bringing your stack up to professional security standards.</div>
+            </div>
         </div>
 
-        <a href="mailto:enok.research.254@gmail.com" class="cta-btn">Secure an Audit</a>
+        <a href="mailto:enok.research.254@gmail.com" class="cta-btn">Book a Professional Audit</a>
         
-        <footer>
-            &copy; 2026 Sage Researcher. All rights reserved.
-        </footer>
+        <p style="margin-top: 30px; font-size: 0.9rem; color: #64748b;">Current Threat Alert: Increased unauthorized attempts on misconfigured Redis instances.</p>
     </div>
 </body>
 </html>
