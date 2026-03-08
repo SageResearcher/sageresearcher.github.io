@@ -3,85 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sage Researcher | Enterprise Security & Breach Prevention</title>
+    <title>Sage Researcher | Secure Infrastructure Solutions</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
         
-        body { 
-            background-color: #0f172a; 
-            color: #e2e8f0; 
-            font-family: 'Inter', sans-serif; 
-            line-height: 1.6; 
-            padding: 40px 10%; 
-            margin: 0; 
-        }
-        
-        .container { max-width: 900px; margin: auto; }
-        
-        h1 { font-family: 'Playfair Display', serif; color: #f8fafc; font-size: 3rem; margin-bottom: 0.5rem; }
-        
-        .hero-sub { font-size: 1.3rem; color: #94a3b8; margin-bottom: 40px; }
-        
-        .panel { 
-            background: #1e293b; 
-            padding: 40px; 
-            border-radius: 12px; 
-            margin-bottom: 30px; 
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); 
-        }
-        
-        h3 { font-family: 'Playfair Display', serif; color: #f8fafc; margin-top: 0; font-size: 1.8rem; border-bottom: 1px solid #334155; padding-bottom: 10px; }
-        
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        
-        .service-item { margin-bottom: 20px; }
-        
-        .cta-btn { 
-            background: #007bff; 
-            color: white; 
-            padding: 15px 30px; 
-            text-decoration: none; 
-            border-radius: 8px; 
-            display: inline-block; 
-            font-weight: 700; 
-            transition: 0.3s; 
-        }
-        
-        .cta-btn:hover { background: #0056b3; transform: translateY(-2px); }
-        
-        .methodology { display: flex; justify-content: space-between; margin-top: 20px; text-align: center; }
-        
-        .step { flex: 1; padding: 10px; }
+        body { background-color: #ffffff; color: #1e293b; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; }
+        .nav { padding: 20px 10%; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; }
+        .hero { padding: 80px 10%; background: #f8fafc; text-align: center; }
+        .content { padding: 50px 10%; max-width: 900px; margin: auto; }
+        h1 { font-size: 3rem; margin-bottom: 10px; }
+        .btn { background: #0f172a; color: #fff; padding: 12px 30px; text-decoration: none; border-radius: 4px; font-weight: 700; }
+        .services { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        .card { padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px; }
+        footer { padding: 40px 10%; text-align: center; color: #64748b; font-size: 0.8rem; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Enterprise Security & Breach Prevention</h1>
-        <p class="hero-sub">Sage Researcher secures your infrastructure by neutralizing attack vectors before they are exploited.</p>
-
-        <div class="panel">
-            <h3>Our Methodology</h3>
-            <div class="methodology">
-                <div class="step">🔍<br><strong>Audit</strong></div>
-                <div class="step">🛠️<br><strong>Remediate</strong></div>
-                <div class="step">🛡️<br><strong>Harden</strong></div>
-                <div class="step">📈<br><strong>Monitor</strong></div>
-            </div>
-        </div>
-
-        <div class="panel">
-            <h3>Client-Focused Outcomes</h3>
-            <div class="grid">
-                <div class="service-item"><strong>Risk Reduction:</strong> We find the leaks in your network before malicious actors do.</div>
-                <div class="service-item"><strong>Data Integrity:</strong> Hardening your systems to prevent unauthorized access.</div>
-                <div class="service-item"><strong>Business Continuity:</strong> Ensuring your infrastructure remains operational during security events.</div>
-                <div class="service-item"><strong>Compliance Readiness:</strong> Bringing your stack up to professional security standards.</div>
-            </div>
-        </div>
-
-        <a href="mailto:enok.research.254@gmail.com" class="cta-btn">Book a Professional Audit</a>
-        
-        <p style="margin-top: 30px; font-size: 0.9rem; color: #64748b;">Current Threat Alert: Increased unauthorized attempts on misconfigured Redis instances.</p>
+    <div class="nav">
+        <strong>SAGE RESEARCHER</strong>
+        <a href="mailto:enok.research.254@gmail.com" style="color: #0f172a; font-weight: bold;">Contact</a>
     </div>
+    
+    <div class="hero">
+        <h1>Infrastructure Security & Breach Prevention</h1>
+        <p>Hardening digital assets against unauthorized access and modern threat vectors.</p>
+        <a href="mailto:enok.research.254@gmail.com" class="btn">Request a Vulnerability Audit</a>
+    </div>
+
+    <div class="content">
+        <h3>Methodology</h3>
+        <p>I operate on a defense-in-depth model. My audits focus on eliminating the low-hanging fruit—SMB vulnerabilities, misconfigured services, and insecure authentication—that lead to 90% of business breaches.</p>
+        
+        <div class="services">
+            <div class="card">
+                <h4>Vulnerability Assessment</h4>
+                <p>Identifying open ports and service weaknesses before they are exploited.</p>
+            </div>
+            <div class="card">
+                <h4>System Hardening</h4>
+                <p>Configuring Linux-based infrastructure for maximum resistance to brute force.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Sage Researcher. Secure Infrastructure.
+    </footer>
 </body>
 </html>
