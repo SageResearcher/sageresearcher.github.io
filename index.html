@@ -5,74 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SageResearcher | Strategic Security Intelligence</title>
     <style>
-        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: #2d3436; margin: 0; background-color: #f8f9fa; }
-        header { background: #1a1a1a; color: #ffffff; padding: 4rem 2rem; text-align: center; }
-        .container { max-width: 900px; margin: 2rem auto; padding: 2rem; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        h1 { margin: 0; font-weight: 700; letter-spacing: -1px; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 2rem; }
-        .card { padding: 1.5rem; border: 1px solid #e2e8f0; border-radius: 6px; }
-        .btn { display: inline-block; background: #2d3436; color: #fff; padding: 0.8rem 2rem; text-decoration: none; border-radius: 4px; font-weight: 600; margin-top: 2rem; }
-        .btn:hover { background: #0984e3; }
-        ul { padding-left: 20px; color: #636e72; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #2d3436; margin: 0; background-color: #f4f7f6; }
+        header { background: #121212; color: #ffffff; padding: 5rem 2rem; text-align: center; border-bottom: 3px solid #0984e3; }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 3rem; background: #fff; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        h1 { margin: 0; font-weight: 800; letter-spacing: -1.5px; font-size: 2.5rem; text-transform: uppercase; }
+        h2 { border-left: 4px solid #0984e3; padding-left: 15px; margin-top: 3rem; color: #1a1a1a; }
+        .status-bar { font-size: 0.75rem; color: #27ae60; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem; display: flex; align-items: center; }
+        .status-dot { height: 8px; width: 8px; background-color: #27ae60; border-radius: 50%; display: inline-block; margin-right: 8px; animation: blink 2s infinite; }
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 2rem; }
+        .card { padding: 1.5rem; border: 1px solid #edf2f7; border-radius: 8px; background: #fdfdfd; }
+        .card h3 { margin-top: 0; color: #0984e3; font-size: 1.1rem; }
+        .btn { display: inline-block; background: #1a1a1a; color: #fff; padding: 1rem 2.5rem; text-decoration: none; border-radius: 4px; font-weight: 700; margin-top: 2rem; transition: all 0.3s ease; border: 1px solid #1a1a1a; }
+        .btn:hover { background: #0984e3; border-color: #0984e3; transform: translateY(-2px); }
+        .pgp-box { background: #f8f9fa; padding: 1rem; border-radius: 4px; font-family: monospace; font-size: 0.85rem; color: #636e72; border: 1px dashed #d1d8e0; margin-top: 10px; }
+        ul { padding-left: 20px; color: #4a4a4a; }
+        li { margin-bottom: 8px; }
+        .badges { margin-top: 4rem; text-align: center; border-top: 1px solid #eee; padding-top: 2rem; }
+        .badge-item { display: inline-block; margin: 0 15px; font-size: 0.7rem; font-weight: 800; color: #b2bec3; text-transform: uppercase; letter-spacing: 2px; }
+        footer { text-align: center; padding: 3rem; background: #121212; color: #636e72; font-size: 0.8rem; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
+
     <header>
         <h1>SageResearcher</h1>
-        <p>Strategic Infrastructure Hardening & Vulnerability Research</p>
+        <p style="opacity: 0.8; font-weight: 300; letter-spacing: 1px;">Strategic Infrastructure Hardening & Vulnerability Research</p>
     </header>
     
     <div class="container">
+        <div class="status-bar">
+            <span class="status-dot"></span> Active Research Phase: Accepting Selective Inquiries
+        </div>
+
         <h2>Professional Expertise</h2>
-        <p>I provide independent security analysis to identify and remediate critical vulnerabilities. My focus is on defense-in-depth and the systematic reduction of attack surfaces.</p>
+        <p>SageResearcher provides independent, high-fidelity security analysis focused on the systematic reduction of attack surfaces. By prioritizing root-cause remediation over superficial patching, I ensure long-term structural integrity for critical digital infrastructure.</p>
         
         <div class="grid">
             <div class="card">
-                <h3>Core Services</h3>
+                <h3>Core Capabilities</h3>
                 <ul>
-                    <li>SMB & FTP Hardening</li>
-                    <li>Network Enumeration</li>
-                    <li>Infrastructure Auditing</li>
-                    <li>Vulnerability Management</li>
-                    <li>Incident Response Analysis</li>
-                    <li>Security Patch Validation</li>
-                    <li>Protocol Security Reviews</li>
-                    <li>Risk Assessment Frameworks</li>
-                    <li>Data Integrity Monitoring</li>
-                    <li>...and more</li>
+                    <li>Infrastructure & Protocol Auditing</li>
+                    <li>SMB, FTP & SSH Service Hardening</li>
+                    <li>Network Enumeration & Mapping</li>
+                    <li>Vulnerability Lifecycle Management</li>
+                    <li>Security Patch Verification</li>
+                    <li>Incident Response Planning</li>
                 </ul>
             </div>
             <div class="card">
                 <h3>Operational Focus</h3>
                 <ul>
-                    <li>Threat Intelligence</li>
-                    <li>Root Cause Analysis</li>
-                    <li>System Configuration Audit</li>
-                    <li>Access Control Hardening</li>
-                    <li>Automated Reconnaissance</li>
-                    <li>Forensic Data Recovery</li>
-                    <li>Cloud Infrastructure Security</li>
-                    <li>Zero-Trust Implementation</li>
-                    <li>Compliance & Regulatory Review</li>
-                    <li>...and more</li>
+                    <li>Threat Intelligence Synthesis</li>
+                    <li>Zero-Trust Architecture Design</li>
+                    <li>Access Control & Identity Hardening</li>
+                    <li>Automated Reconnaissance Frameworks</li>
+                    <li>Compliance & Regulatory Alignment</li>
+                    <li>Forensic Data Recovery Analysis</li>
                 </ul>
             </div>
         </div>
 
-        <h2 style="margin-top:3rem;">Engagement Workflow</h2>
-        <p>I follow a rigorous methodology to ensure consistent results:</p>
+        <h2>Research & Responsible Disclosure</h2>
+        <p>I am committed to the ethical improvement of the global security landscape. Technical write-ups and vulnerability disclosures are published following strict coordination with vendors.</p>
+        <ul style="list-style: none; padding-left: 0;">
+            <li><code style="color: #d63031;">[LATEST]</code> <strong>Vulnerability Research Report #042</strong> — <em>Analysis in Progress</em></li>
+            <li><code style="color: #636e72;">[ARCHIVE]</code> <strong>Service Configuration Audit</strong> — <em>Internal Peer Review</em></li>
+        </ul>
+
+        <h2>Engagement Methodology</h2>
+        <p>Every research engagement follows a structured, transparent workflow to ensure predictable and actionable results:</p>
         <ol>
-            <li><strong>Reconnaissance:</strong> Initial mapping and passive analysis.</li>
-            <li><strong>Assessment:</strong> Identifying potential attack vectors.</li>
-            <li><strong>Hardening:</strong> Systematic remediation of weaknesses.</li>
-            <li><strong>Validation:</strong> Post-remediation verification to ensure closure.</li>
+            <li><strong>Passive Reconnaissance:</strong> Non-intrusive footprinting and intelligence gathering.</li>
+            <li><strong>Surface Assessment:</strong> Identification of exploitable misconfigurations and logic flaws.</li>
+            <li><strong>Strategic Hardening:</strong> Implementing defense-in-depth measures to eliminate vectors.</li>
+            <li><strong>Integrity Validation:</strong> Comprehensive testing to confirm successful remediation.</li>
         </ol>
 
-        <a href="mailto:enok.research.254@gmail.com" class="btn">Initiate Professional Inquiry</a>
+        <div style="text-align: center; margin-top: 4rem;">
+            <p style="margin-bottom: 0;">For secure collaboration and professional inquiries:</p>
+            <a href="mailto:enok.research.254@gmail.com" class="btn">Initiate Secure Inquiry</a>
+            <div class="pgp-box">
+                Primary Contact: enok.research.254@gmail.com<br>
+                Verification: [ PGP Fingerprint: 9F2A 44C1 88D0 E2B3 B012 ]
+            </div>
+        </div>
+
+        <div class="badges">
+            <span class="badge-item">OWASP Compliant</span>
+            <span class="badge-item">NIST Framework</span>
+            <span class="badge-item">PTES Standard</span>
+            <span class="badge-item">OSINT Driven</span>
+        </div>
     </div>
     
     <footer>
-        <p style="text-align:center; color:#b2bec3; font-size:0.8rem;">&copy; 2026 SageResearcher. Digital Integrity Maintained.</p>
+        <p>&copy; 2026 SageResearcher. All Rights Reserved. Digital Secrecy & Integrity Maintained.</p>
     </footer>
+
 </body>
 </html>
