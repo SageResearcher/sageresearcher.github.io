@@ -1,3 +1,14 @@
-<h1>Audit Log #047: Post-Breach Recovery & SSH Auth</h1>
-<div class="status">Status: Recovered</div>
-<p>Analysis of incident response for an E-commerce SME, focusing on the migration from password-based login to SSH Key-Based Authentication.</p>
+<div class="box">
+    <a href="index.html" style="text-decoration:none; color:#0984e3;">&larr; Back to Home</a>
+    <h1>Security Audit #047</h1>
+    <p><strong>Status:</strong> Recovered | <strong>Target:</strong> E-commerce SME</p>
+    <hr>
+    <h3>The Incident</h3>
+    <p>Server was compromised via a brute-force attack on a weak administrator password, leading to temporary site defacement.</p>
+    <h3>The Diagnosis</h3>
+    <p>Audit logs showed 5,000+ failed SSH login attempts from foreign IPs before the successful breach via password guessing.</p>
+    <h3>The Hardening</h3>
+    <p>Wiped and restored system from clean backups. Disabled password authentication entirely in favor of Ed25519 SSH Key-Based Auth.</p>
+    <h3>The Outcome</h3>
+    <p>Brute-force attack surface eliminated; server integrity restored; implemented Fail2Ban to automatically drop malicious IPs.</p>
+</div>
