@@ -3,71 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SageResearcher | Cybersecurity & IT Strategy</title>
+    <title>SageResearcher | Strategic Cybersecurity & IT Consulting</title>
     <style>
-        :root { --dark: #0f172a; --blue: #2563eb; --light: #f8fafc; --text: #334155; }
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.7; color: var(--text); background: var(--light); margin: 0; }
+        :root {
+            --primary: #0984e3;
+            --dark: #1a1a1a;
+            --bg: #f8fbff;
+            --text: #2d3436;
+        }
+        body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; color: var(--text); margin: 0; background-color: var(--bg); }
         
-        .nav { background: #fff; padding: 1.5rem 10%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; }
-        .nav h1 { font-size: 1.2rem; color: var(--dark); margin: 0; }
-        
-        .hero { padding: 80px 10%; background: #fff; text-align: center; }
-        .hero h2 { font-size: 3rem; color: var(--dark); margin-bottom: 1rem; }
-        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto; color: #64748b; }
-        
-        .section { padding: 80px 10%; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { background: #fff; padding: 40px; border-radius: 8px; border: 1px solid #e2e8f0; }
-        .card h3 { color: var(--blue); margin-top: 0; }
+        /* Navigation */
+        nav { text-align: center; background: #fff; padding: 1.5rem; border-bottom: 1px solid #dfe6e9; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: var(--dark); margin: 0 20px; text-decoration: none; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        nav a:hover { color: var(--primary); }
 
-        .saas-box { background: var(--dark); color: white; padding: 40px; border-radius: 8px; margin-top: 40px; text-align: center; }
-        .saas-box h3 { color: #fff; margin-bottom: 1rem; }
-        .badge { background: var(--blue); padding: 5px 12px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+        /* Header */
+        header { background: linear-gradient(135deg, #1a1a1a 0%, #0984e3 100%); color: #ffffff; padding: 4rem 2rem; text-align: center; }
+        h1 { margin: 0; font-weight: 800; font-size: 2.8rem; letter-spacing: -1px; }
 
-        .footer { padding: 40px 10%; text-align: center; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+        .container { max-width: 900px; margin: 3rem auto; padding: 2rem; background: #fff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+
+        /* SaaS Section */
+        .saas-priority { background: #ebf5ff; border: 1px solid #d0e8ff; padding: 2rem; border-radius: 8px; margin: 2rem 0; }
+        .saas-priority h3 { color: var(--primary); margin-top: 0; }
+
+        /* Services Grid */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 2rem; }
+        .card { padding: 2rem; border: 1px solid #f0f0f0; border-radius: 8px; background: #fafafa; }
+        .card h3 { color: var(--primary); margin-top: 0; }
+
+        .btn { display: inline-block; background: var(--primary); color: #fff; padding: 1rem 2rem; text-decoration: none; border-radius: 6px; font-weight: 700; transition: 0.3s; }
+        .btn:hover { background: #0774c8; transform: translateY(-2px); }
+        
+        footer { text-align: center; padding: 3rem; color: #636e72; font-size: 0.8rem; }
     </style>
 </head>
 <body>
 
-<div class="nav">
-    <h1>SageResearcher</h1>
-    <a href="#contact" style="background: var(--blue); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Get Consultation</a>
-</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<div class="hero">
-    <h2>Strategic IT Consulting & Security Hardening</h2>
-    <p>We secure your digital infrastructure against vulnerabilities. From network mapping to incident response, we ensure your business remains resilient.</p>
-</div>
-
-<div class="section">
-    <div class="grid">
-        <div class="card">
-            <h3>Infrastructure Hardening</h3>
-            <p>We eliminate unauthorized access points, harden your servers, and implement strict firewall configurations to lock down your network.</p>
+    <header id="home">
+        <h1>SageResearcher</h1>
+        <p style="opacity: 0.9; font-weight: 300;">Strategic IT Consulting & Cybersecurity Hardening</p>
+    </header>
+    
+    <div class="container">
+        <div class="saas-priority">
+            <h3>Automated Security Intelligence (Early Access)</h3>
+            <p><strong>What is this?</strong> We are developing a proprietary SaaS (Security-as-a-Service) engine. Essentially, it is an automated security guard for your digital perimeter. It monitors your network status 24/7 and generates real-time health reports so you don't have to manually request audits.</p>
+            <p style="font-size: 0.9rem; color: #555;"><em>Note: Full access is currently reserved for high-priority infrastructure partners.</em></p>
         </div>
-        <div class="card">
-            <h3>Business Continuity</h3>
-            <p>Don't let downtime kill your revenue. We optimize performance, manage critical security patches, and provide rapid recovery from breaches.</p>
+
+        <h2 id="services">Cybersecurity & IT Infrastructure</h2>
+        <p>SageResearcher delivers independent security analysis and high-performance IT maintenance. I help SMEs across Kenya build resilient digital infrastructures, focusing on uptime and data integrity.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Infrastructure Hardening</h3>
+                <ul>
+                    <li>Secure Wi-Fi & Network Architecture</li>
+                    <li>Server Protocol Auditing (SSH/SMB)</li>
+                    <li>Firewall Implementation</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Business Continuity</h3>
+                <ul>
+                    <li>System Optimization & Bottleneck Removal</li>
+                    <li>Critical Security Patch Management</li>
+                    <li>Rapid Incident Response</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="contact" style="margin-top: 4rem;">Get in Touch</h2>
+        <p>For urgent support or to schedule a system audit, reach out directly. Digital authorization is required prior to any infrastructure intervention.</p>
+        
+        <div style="text-align: center; margin: 3rem 0;">
+            <a href="mailto:enok.research.254@gmail.com" class="btn">Request System Audit</a>
+        </div>
+
+        <div style="text-align: center; border-top: 1px solid #eee; padding-top: 2rem;">
+            <p style="font-weight: bold; color: #1a1a1a;">Urgent Incident Gateway (WhatsApp)</p>
+            <a href="https://wa.me/254782755004" style="color: var(--primary); font-weight: bold; font-size: 1.2rem; text-decoration: none;">+254 782 755 004</a>
         </div>
     </div>
-
-    <div class="saas-box">
-        <span class="badge">Innovation</span>
-        <h3>SageResearcher SaaS: Coming Soon</h3>
-        <p>We are building a proprietary security dashboard that puts network health status directly at your fingertips. High-priority partners will receive early access to this automated auditing tool.</p>
-    </div>
-</div>
-
-<div class="section" id="contact" style="background: #fff;">
-    <h2>Get in Touch</h2>
-    <p>Professional integrity is our priority. Reach out for a consultation.</p>
-    <p><strong>Email:</strong> enok.research.254@gmail.com</p>
-    <p><strong>Urgent Support:</strong> +254 782 755 004</p>
-</div>
-
-<div class="footer">
-    &copy; 2026 SageResearcher. All Rights Reserved.
-</div>
+    
+    <footer>
+        &copy; 2026 SageResearcher. Independence & Integrity Maintained.
+    </footer>
 
 </body>
 </html>
