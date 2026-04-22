@@ -10,7 +10,6 @@
             height: 100vh; overflow-x: auto; 
             scroll-snap-type: x mandatory; 
             font-family: 'Inter', system-ui, sans-serif;
-            background: #f4f7f6;
         }
         .container { display: flex; height: 100vh; width: 200vw; }
         section { 
@@ -27,14 +26,14 @@
         .contact-box { margin-top: 3rem; background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 8px; }
         
         /* Page 2: Operations */
-        .page-white { padding: 4rem; overflow-y: auto; justify-content: flex-start; }
+        .page-white { background: #f4f7f6; color: #2d3436; padding: 4rem; overflow-y: auto; }
         
+        /* SaaS Badge */
         .badge { background: #0984e3; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.7rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; display: inline-block; }
-        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-bottom: 20px; max-width: 600px; width: 100%; }
         
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-bottom: 20px; max-width: 600px; width: 100%; }
+        h1 { font-size: 3rem; margin-bottom: 0.5rem; }
         h2 { color: #0984e3; margin-bottom: 1rem; }
-        .tools-list { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin-top: 10px; }
-        .tool-tag { background: #f1f2f6; color: #2f3542; padding: 5px 12px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -43,10 +42,13 @@
     <section class="page-blue">
         <h1>SageResearcher</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">Strategic IT Consulting & Cybersecurity Hardening</p>
+        
         <div class="contact-box">
-            <p><strong>Email:</strong><br><a href="mailto:enok.research.254@gmail.com" style="color: white; text-decoration: none;">enok.research.254@gmail.com</a></p>
-            <p style="margin-top: 20px;"><strong>WhatsApp:</strong><br><a href="https://wa.me/254782755004" style="color: white; text-decoration: none;">+254 782 755 004</a></p>
-            <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.7;">Swipe left for technical specs</p>
+            <p><strong>Email SageResearcher:</strong></p>
+            <a href="mailto:enok.research.254@gmail.com" style="color: white; font-size: 1.5rem; text-decoration: none;">enok.research.254@gmail.com</a>
+            <p style="margin-top: 20px;"><strong>WhatsApp SageResearcher:</strong></p>
+            <a href="https://wa.me/254782755004" style="color: white; font-size: 1.5rem; text-decoration: none;">+254 782 755 004</a>
+            <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.7;">Swipe left to view Operations</p>
         </div>
     </section>
 
@@ -54,23 +56,13 @@
         <div class="card">
             <div class="badge">Coming Soon</div>
             <h2>Security at your fingertips</h2>
-            <p>Our proprietary SaaS engine will soon allow automated infrastructure health monitoring—security status at your own comfort.</p>
+            <p>We are currently finalizing our SaaS (Software as a Service) platform. This tool will allow you to run automated security audits and view your infrastructure health status from your own browser, 24/7.</p>
         </div>
 
         <div class="card">
-            <h2>The Sage Methodology</h2>
-            <p style="font-size: 0.9rem;">1. Surface Mapping | 2. Gap Analysis | 3. Hardening | 4. Stress Testing</p>
-        </div>
-
-        <div class="card">
-            <h2>Tools of the Trade</h2>
-            <ul class="tools-list">
-                <li class="tool-tag">Kali Linux</li>
-                <li class="tool-tag">Wireshark</li>
-                <li class="tool-tag">Nmap</li>
-                <li class="tool-tag">WireGuard</li>
-                <li class="tool-tag">Metasploit</li>
-            </ul>
+            <h2>Core Services</h2>
+            <p><strong>Infrastructure Hardening:</strong> Secure Wi-Fi, Server Protocol Auditing (SSH/SMB), and Network Mapping.</p>
+            <p style="margin-top:10px;"><strong>Business Continuity:</strong> System Optimization, Critical Patch Management, and Rapid Incident Response.</p>
         </div>
         
         <p style="font-size: 0.8rem; color: #636e72; margin-top: 20px;">[ Swipe right to return to contact ]</p>
