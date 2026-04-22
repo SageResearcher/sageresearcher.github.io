@@ -3,199 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline';">
-    
-    <title>SageResearcher | IT Consultant & Cybersecurity Support Kenya</title>
-    <meta name="description" content="Independent IT Consultant in Kenya specializing in cybersecurity hardening, network optimization, and SME tech support. Serving Kisumu, Maseno, and Nairobi remotely.">
-    <meta name="keywords" content="IT Consultant Kenya, Cybersecurity Consultant East Africa, Network Hardening, Fix Slow Computer, Secure Wi-Fi Nairobi, Small Business IT Support">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-    <link rel="manifest" href="/site.webmanifest">
-
+    <title>SageResearcher | Cyber-Fortress</title>
     <style>
-        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #2d3436; margin: 0; background-color: #f4f7f6; }
-        nav { text-align: center; background: #1a1a1a; padding: 1rem; border-bottom: 2px solid #0984e3; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
-        nav a:hover { color: #0984e3; transition: 0.3s; }
-        header { background: #121212; color: #ffffff; padding: 5rem 2rem; text-align: center; border-bottom: 3px solid #0984e3; }
-        .container { max-width: 1000px; margin: 2rem auto; padding: 3rem; background: #fff; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
-        h1 { margin: 0; font-weight: 800; letter-spacing: -1.5px; font-size: 2.5rem; text-transform: uppercase; }
-        h2 { border-left: 4px solid #0984e3; padding-left: 15px; margin-top: 3rem; color: #1a1a1a; }
-        .status-bar { font-size: 0.75rem; color: #27ae60; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; }
-        .status-dot { height: 8px; width: 8px; background-color: #27ae60; border-radius: 50%; display: inline-block; margin-right: 8px; animation: blink 2s infinite; }
-        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 2rem; }
-        .card { padding: 1.5rem; border: 1px solid #edf2f7; border-radius: 8px; background: #fdfdfd; }
-        .card h3 { margin-top: 0; color: #0984e3; font-size: 1.1rem; }
-        .btn { display: inline-block; background: #1a1a1a; color: #fff; padding: 1rem 2.5rem; text-decoration: none; border-radius: 4px; font-weight: 700; margin-top: 2rem; transition: all 0.3s ease; border: 1px solid #1a1a1a; }
-        .btn:hover { background: #0984e3; border-color: #0984e3; transform: translateY(-2px); }
-        .whatsapp-link { color: #27ae60; font-weight: bold; text-decoration: none; font-family: monospace; font-size: 1.1rem; }
-        .pgp-box { background: #f8f9fa; padding: 1rem; border-radius: 4px; font-family: monospace; font-size: 0.85rem; color: #636e72; border: 1px dashed #d1d8e0; margin-top: 20px; text-align: center; }
-        .tools-list { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin-top: 1rem; }
-        .tool-tag { background: #f1f2f6; color: #2f3542; padding: 5px 12px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; border-bottom: 2px solid #0984e3; }
-        .testimonial { font-style: italic; color: #636e72; border-left: 3px solid #dfe6e9; padding-left: 20px; margin: 2rem 0; }
-        .badges { margin-top: 4rem; text-align: center; border-top: 1px solid #eee; padding-top: 2rem; }
-        .badge-item { display: inline-block; margin: 0 15px; font-size: 0.7rem; font-weight: 800; color: #b2bec3; text-transform: uppercase; letter-spacing: 2px; }
-        footer { text-align: center; padding: 3rem; background: #121212; color: #636e72; font-size: 0.8rem; }
-        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+        :root {
+            --bg: #050505;
+            --card: #0a0a0a;
+            --accent: #00d2ff;
+            --text: #e0e0e0;
+            --dim: #666;
+        }
+        body { 
+            background-color: var(--bg); 
+            color: var(--text); 
+            font-family: 'Courier New', Courier, monospace; 
+            margin: 0; 
+            line-height: 1.5;
+        }
+        nav { 
+            text-align: center; 
+            padding: 20px; 
+            border-bottom: 1px solid var(--accent); 
+        }
+        nav a { 
+            color: var(--accent); 
+            text-decoration: none; 
+            margin: 0 15px; 
+            text-transform: uppercase; 
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+        }
+        .container { max-width: 800px; margin: 2rem auto; padding: 20px; }
+        h1 { color: var(--accent); text-transform: uppercase; letter-spacing: 5px; text-align: center; }
+        .hero { text-align: center; padding: 40px; border: 1px solid #333; margin-bottom: 2rem; }
+        
+        /* SaaS Card */
+        .saas-card { 
+            background: linear-gradient(145deg, #0a0a0a, #111);
+            border: 1px solid var(--accent); 
+            padding: 30px; 
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .saas-card h2 { color: var(--accent); margin-top: 0; }
+        .saas-card p { font-size: 0.9rem; color: #aaa; }
+        
+        .card { 
+            background: var(--card); 
+            border: 1px solid #333; 
+            padding: 20px; 
+            margin-bottom: 20px;
+        }
+        .card h3 { color: var(--accent); margin-top: 0; }
+        
+        .btn { 
+            display: inline-block; 
+            background: transparent; 
+            color: var(--accent); 
+            padding: 10px 20px; 
+            border: 1px solid var(--accent); 
+            text-decoration: none; 
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .btn:hover { background: var(--accent); color: #000; }
+        
+        footer { text-align: center; padding: 40px; color: var(--dim); font-size: 0.7rem; }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="#audit-logs">Audit Logs</a>
-        <a href="#research">Research Lab</a>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <header>
-        <img src="logo.png" alt="SageResearcher Logo" style="width: 120px; height: auto; margin-bottom: 1.5rem; border-radius: 8px;">
-        <h1>SageResearcher</h1>
-        <p style="opacity: 0.8; font-weight: 300; letter-spacing: 1px;">Strategic IT Consulting & Cybersecurity Hardening</p>
-    </header>
-    
     <div class="container">
-        <div class="status-bar">
-            <span class="status-dot"></span> Active Operation: Available for Remote Support Kenya-Wide
+        <div class="hero">
+            <h1>SageResearcher</h1>
+            <p>> Strategic IT Consulting & Cybersecurity Operations</p>
         </div>
 
-        <h2>Business Continuity & Cybersecurity Services</h2>
-        <p>SageResearcher provides independent security analysis and high-performance IT maintenance for small businesses across Kenya. I specialize in maintaining uptime through <strong>low-latency WireGuard VPNs</strong> and hardened network infrastructure.</p>
-        
-        <div class="grid">
-            <div class="card">
-                <h3>Infrastructure Hardening</h3>
-                <ul>
-                    <li><strong>Secure Wi-Fi Setup:</strong> Eliminating unauthorized access points.</li>
-                    <li><strong>Server Auditing:</strong> Hardening SMB, FTP, and SSH protocols.</li>
-                    <li><strong>Network Mapping:</strong> Full visibility into your digital assets.</li>
-                    <li><strong>Firewall Configuration:</strong> Blocking malicious incoming traffic.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Business Continuity</h3>
-                <ul>
-                    <li><strong>Optimization:</strong> Fixing slow computers and hardware bottlenecks.</li>
-                    <li><strong>System Updates:</strong> Managing critical security patches.</li>
-                    <li><strong>Data Recovery:</strong> Forensic analysis and backup verification.</li>
-                    <li><strong>Incident Response:</strong> Fast recovery from digital breaches.</li>
-                </ul>
-            </div>
+        <div class="saas-card">
+            <h2>[ SAAS COMING SOON ]</h2>
+            <p><strong>What is SaaS?</strong> It stands for <em>Software as a Service</em>.</p>
+            <p>Think of it as a personal security dashboard. Instead of calling me for manual checks, you will get access to an automated tool that monitors your business security status 24/7. It's like having a security guard that never sleeps, accessible directly from your browser.</p>
+            <div style="color: var(--accent); font-size: 0.8rem; margin-top: 15px;">[ STATUS: DEVELOPMENT IN PROGRESS ]</div>
         </div>
 
-        <h2 id="research">Research Lab & Competencies</h2>
-        <p>Beyond standard IT support, I maintain deep technical proficiency in core security research domains:</p>
-        <ul class="tools-list">
-            <li class="tool-tag">Binary Reverse Engineering</li>
-            <li class="tool-tag">Memory Corruption Analysis</li>
-            <li class="tool-tag">Network Packet Inspection</li>
-            <li class="tool-tag">Zero-Trust Architecture</li>
-        </ul>
-
-        <h2>Tools of the Trade</h2>
-        <p>I utilize industry-standard tools to perform deep-level network and system analysis.</p>
-        <ul class="tools-list">
-            <li class="tool-tag">Kali Linux</li>
-            <li class="tool-tag">Wireshark</li>
-            <li class="tool-tag">Nmap</li>
-            <li class="tool-tag">Metasploit Framework</li>
-            <li class="tool-tag">Ubuntu Server</li>
-            <li class="tool-tag">OpenVPN / WireGuard</li>
-        </ul>
-
-        <h2 id="audit-logs">Research & Audit Logs</h2>
-        <p>Technical write-ups on local network vulnerabilities and hardening strategies. All audits performed under written client authorization.</p>
-        <ul style="list-style: none; padding-left: 0;">
-            <li style="background: #f8f9fa; padding: 15px; border-radius: 4px; border: 1px solid #eee; margin-bottom: 10px;">
-                <strong>Security Audit #042</strong> — <em>Analysis of Local SME Network Gaps</em>
-                <br>
-                <a href="audit-042.html" style="color: #0984e3; font-weight: bold; text-decoration: none;">View Full Audit Log &rarr;</a>
-            </li>
-
-            <li style="background: #f8f9fa; padding: 15px; border-radius: 4px; border: 1px solid #eee; margin-bottom: 10px;">
-                <strong>Audit Log #043</strong> — <em>WPA3 Transition & Rogue AP Detection</em>
-                <br><small style="color: #636e72;">Status: Remediated | Target: Hospitality/Airbnb Client</small>
-                <br><a href="audit-043.html" style="color: #0984e3; font-weight: bold; text-decoration: none; font-size: 0.85rem;">View Full Audit Log &rarr;</a>
-            </li>
-
-            <li style="background: #f8f9fa; padding: 15px; border-radius: 4px; border: 1px solid #eee; margin-bottom: 10px;">
-                <strong>Audit Log #044</strong> — <em>Legacy SMB v1.0 Disablement & Port 445 Filtering</em>
-                <br><small style="color: #636e72;">Status: Secured | Target: Logistics Firm</small>
-                <br><a href="audit-044.html" style="color: #0984e3; font-weight: bold; text-decoration: none; font-size: 0.85rem;">View Full Audit Log &rarr;</a>
-            </li>
-
-            <li style="background: #f8f9fa; padding: 15px; border-radius: 4px; border: 1px solid #eee; margin-bottom: 10px;">
-                <strong>Audit Log #045</strong> — <em>WireGuard Peer-to-Peer VPN Implementation</em>
-                <br><small style="color: #636e72;">Status: Active | Target: Remote Professional Services</small>
-                <br><a href="audit-045.html" style="color: #0984e3; font-weight: bold; text-decoration: none; font-size: 0.85rem;">View Full Audit Log &rarr;</a>
-            </li>
-
-            <li style="background: #f8f9fa; padding: 15px; border-radius: 4px; border: 1px solid #eee; margin-bottom: 10px;">
-                <strong>Audit Log #046</strong> — <em>External Surface Mapping & Nmap Service Versioning</em>
-                <br><small style="color: #636e72;">Status: Evaluated | Target: Private Clinic Infrastructure</small>
-                <br><a href="audit-046.html" style="color: #0984e3; font-weight: bold; text-decoration: none; font-size: 0.85rem;">View Full Audit Log &rarr;</a>
-            </li>
-
-            <li style="background: #f8f9fa; padding: 15px; border-radius: 4px; border: 1px solid #eee; margin-bottom: 10px;">
-                <strong>Audit Log #047</strong> — <em>Post-Breach Recovery & SSH Key-Based Auth Migration</em>
-                <br><small style="color: #636e72;">Status: Recovered | Target: E-commerce SME</small>
-                <br><a href="audit-047.html" style="color: #0984e3; font-weight: bold; text-decoration: none; font-size: 0.85rem;">View Full Audit Log &rarr;</a>
-            </li>
-        </ul>
-
-        <h2>Client Impact</h2>
-        <div class="testimonial">
-            "The network stability significantly improved after the infrastructure audit. Unauthorized access was eliminated, and our server response time doubled."
-            <br><strong>— Operations Manager, Local Retail SME</strong>
+        <h2 id="services" style="color: var(--accent);">SERVICES</h2>
+        <div class="card">
+            <h3>Infrastructure Hardening</h3>
+            <p>I specialize in network mapping, securing SMB/SSH protocols, and configuring firewalls to block unauthorized traffic.</p>
+        </div>
+        <div class="card">
+            <h3>Business Continuity</h3>
+            <p>Optimization of hardware bottlenecks, remote network maintenance, and rapid incident response.</p>
         </div>
 
-        <h2>The Sage Methodology</h2>
-        <ol>
-            <li><strong>Vulnerability Surface Mapping:</strong> Identifying the attack footprint of your infrastructure.</li>
-            <li><strong>Critical Gap Analysis:</strong> Deep assessment of why current systems fail.</li>
-            <li><strong>Infrastructure Shielding:</strong> Implementing long-term, high-integrity hardening.</li>
-            <li><strong>Post-Hardening Stress Test:</strong> Validating system resilience under real-world traffic.</li>
-        </ol>
-
-        <div id="contact" style="text-align: center; margin-top: 4rem;">
-            <p style="margin-bottom: 0.5rem;">Email SageResearcher:</p>
-            <a href="mailto:enok.research.254@gmail.com" class="btn">Request a System Audit</a>
-            
-            <div style="margin-top: 2rem; padding: 2rem; border: 1px solid #edf2f7; border-radius: 8px; background: #fafafa;">
-                <p style="font-weight: bold; margin-bottom: 0.5rem;">Pre-Service Requirement:</p>
-                <p style="font-size: 0.9rem; color: #636e72; margin-top: 0;">Written digital authorization is required before any server or network intervention.</p>
-                <a href="https://tally.so/r/OD01rY" target="_blank" class="btn" style="background: #27ae60; border-color: #27ae60; margin-top: 1rem; padding: 0.7rem 1.5rem;">
-                    Complete Digital Authorization
-                </a>
-            </div>
-            
-            <p style="margin-top: 2.5rem; margin-bottom: 0.5rem; font-weight: 800; color: #2d3436; letter-spacing: 1px;">
-                [ URGENT INCIDENT GATEWAY ]
-            </p>
-            <p style="margin-top: 0; color: #636e72; font-size: 0.9rem;">WhatsApp Business Support</p>
-            <a href="https://wa.me/254782755004" class="whatsapp-link">+254 782 755 004</a>
-
-            <div class="pgp-box">
-                Primary Contact: enok.research.254@gmail.com<br>
-                Service Verification: [ SageResearcher Certified ]
-            </div>
-        </div>
-
-        <div class="badges">
-            <span class="badge-item">SME Focused</span>
-            <span class="badge-item">Kenya Local Support</span>
-            <span class="badge-item">Zero-Trust Ready</span>
-            <span class="badge-item">Infrastructure Integrity</span>
+        <h2 style="color: var(--accent);">CONTACT</h2>
+        <div class="card">
+            <p>Email: <a href="mailto:enok.research.254@gmail.com" style="color:white;">enok.research.254@gmail.com</a></p>
+            <p>Support: <a href="https://wa.me/254782755004" style="color:white;">WhatsApp Business</a></p>
+            <a href="https://tally.so/r/OD01rY" class="btn">REQUEST SYSTEM AUDIT</a>
         </div>
     </div>
-    
+
     <footer>
-        <p>&copy; 2026 SageResearcher. All Rights Reserved. Independence & Integrity Maintained.</p>
+        &copy; 2026 SAGERESEARCHER | FORTRESS OPERATIONAL | INDEPENDENT
     </footer>
 
 </body>
